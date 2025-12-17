@@ -1,2 +1,3 @@
 # goit-algo-fp
-Final project on algorithms
+
+## Final project on algorithms
