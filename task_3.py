@@ -1,5 +1,6 @@
 import heapq
 
+
 class Graph:
     def __init__(self):
         self.edges = {}
@@ -67,3 +68,4 @@ if __name__ == "__main__":
         path_str = str(dist) if dist != float('inf') else "Unavailable"
         print(f"To vertex {vertex}: \t{path_str}")
     print("-" * 40)
+    
