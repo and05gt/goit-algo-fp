@@ -64,20 +64,21 @@ def draw_heap(heap_list):
     root_node.color = "lightgreen"
     draw_tree(root_node)
 
-# Створення дерева
-root = Node(0)
-root.left = Node(4)
-root.left.left = Node(5)
-root.left.right = Node(10)
-root.right = Node(1)
-root.right.left = Node(3)
+if __name__ == "__main__":
+    # Створення дерева
+    root = Node(0)
+    root.left = Node(4)
+    root.left.left = Node(5)
+    root.left.right = Node(10)
+    root.right = Node(1)
+    root.right.left = Node(3)
 
-# Відображення дерева
-draw_tree(root)
+    # Відображення дерева
+    draw_tree(root)
 
-# Create a heap and visualize it
-data = [10, 5, 3, 2, 4, 15, 7, 1]
-heapq.heapify(data)
+    # Create a heap and visualize it
+    data = [10, 5, 3, 2, 4, 15, 7, 1]
+    heapq.heapify(data)
 
-print("Heap array:", data)
-draw_heap(data)
+    print("Heap array:", data)
+    draw_heap(data)
